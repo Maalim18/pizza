@@ -15,5 +15,7 @@ function Total(price, quantity, delivery) {
 }
 
 Total.prototype.finalTotal = function () {
-    return this.price * this.quantity + this.delivery;
+    return this.price + this.quantity + this.delivery;
 };
+var sizePrice = [1000, 500, 250]
+var deliverPrices = [0, 200];
