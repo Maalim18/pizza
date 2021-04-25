@@ -54,3 +54,13 @@ $(document).ready(function () {
         }
 
     });
+    $('form#contactForm').submit(function (event) {
+        event.preventDefault();
+        var name = $('#name').val();
+        var pass = $('#email').val();
+        var mess = $('#mess').val();
+        alert("hello.Thank you for your order " + name + " we have received your message and we will get in touch. Thank you for contacting us");
+    });
+
+
+});
